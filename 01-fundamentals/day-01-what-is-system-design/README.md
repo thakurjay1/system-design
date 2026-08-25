@@ -84,6 +84,40 @@ what can fail, and what trade-offs are acceptable?"
 
 3. System Design Mental Model
 The complete system-design thought process:
+```mermaid
+flowchart TD
+
+    A[Business Problem] --> B[Requirements]
+
+    B --> C[Functional Requirements]
+    B --> D[Non-Functional Requirements]
+
+    C --> E[Constraints & Assumptions]
+    D --> E
+
+    E --> F[Scale & Capacity]
+
+    F --> G[Architecture]
+
+    G --> H[Components]
+    G --> I[Interfaces]
+    G --> J[Dependencies]
+    G --> K[Data Flow]
+
+    H --> L[Failure Analysis]
+    I --> L
+    J --> L
+    K --> L
+
+    L --> M[Trade-offs]
+
+    M --> N[SLIs]
+    N --> O[SLOs]
+    O --> P[SLAs]
+
+    P --> Q[Monitor & Operate]
+    Q --> R[Architecture Evolution]
+```
 
 Core principle : 
 Requirements -> Architecture -> Implementation
