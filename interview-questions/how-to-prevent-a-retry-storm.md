@@ -1,4 +1,4 @@
-# 7. Retries Are Creating a Traffic Spike. How Would You Prevent a Retry Storm?
+# Retries Are Creating a Traffic Spike. How Would You Prevent a Retry Storm?
 
 A **retry storm** happens when a service or downstream dependency starts failing or becoming slow, and clients automatically retry their requests. Those retries create additional traffic, which puts even more pressure on the already unhealthy service.
 
